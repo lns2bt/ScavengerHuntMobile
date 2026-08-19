@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f2eb" />
+    <title>Spurensinn – Die Stadt ist voller Geschichten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Spurensinn Startseite"><span class="brand-mark">S</span><span>Spurensinn</span></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#so-gehts">So geht’s</a><a href="#touren">Touren</a><a href="#features">Features</a>
+      </nav>
+      <button class="login-link" data-open-login>Anmelden <span>↗</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow"><span></span> Entdecke, was andere übersehen</div>
+        <h1>Die Stadt ist voller<br /><em>Geschichten.</em></h1>
+        <p class="hero-copy">Dein Smartphone wird zum Kompass. Löse Rätsel, entdecke geheime Orte und erlebe deine Stadt völlig neu.</p>
+        <div class="hero-actions">
+          <button class="button primary" data-start>Abenteuer starten <span>→</span></button>
+          <a class="text-link" href="#so-gehts"><span class="play">▶</span> So funktioniert’s</a>
+        </div>
+        <div class="trust"><div class="avatars"><span>🌿</span><span>🧢</span><span>🌞</span></div><p><strong>4,9</strong> ★★★★★<br /><small>von über 2.400 Entdecker:innen</small></p></div>
+      </section>
+
+      <section class="phone-stage" aria-label="Vorschau der App">
+        <div class="accent-stroke"></div>
+        <div class="phone">
+          <div class="phone-top"><span>9:41</span><span class="island"></span><span>● ◔</span></div>
+          <div class="app-head"><div><small>DEINE TOUR</small><strong>Altstadt Geheimnisse</strong></div><button aria-label="Menü">•••</button></div>
+          <div class="progress"><span><i style="width: 60%"></i></span><small>3 von 5 Stationen</small></div>
+          <div class="map" id="map">
+            <svg viewBox="0 0 330 390" role="img" aria-label="Karte mit Route durch die Altstadt">
+              <rect width="330" height="390" fill="#e9e6dd"/>
+              <g fill="#d7d3c8" stroke="#f7f5ef" stroke-width="5">
+                <path d="M-20 18h103l6 77-48 35-61-7z"/><path d="M105 4h93l-5 83-77 14z"/><path d="M215-8h130v89l-97 20-28-40z"/>
+                <path d="M-6 150l74-5 40 54-24 64-90-14z"/><path d="M130 121l63-17 40 52-18 77-94-18z"/><path d="M254 109l86-15v116l-91 14z"/>
+                <path d="M-7 279l103-5 9 123H-8z"/><path d="M125 250l91 1 8 146H122z"/><path d="M244 246l96-20v171h-91z"/>
+              </g>
+              <path class="route" d="M54 327 C54 270 132 283 127 222 S225 200 213 137 S270 102 279 60" fill="none" stroke="#202e27" stroke-width="4" stroke-dasharray="7 7"/>
+              <g class="pin"><circle cx="55" cy="326" r="19"/><text x="55" y="332">1</text></g><g class="pin"><circle cx="127" cy="221" r="19"/><text x="127" y="227">2</text></g><g class="pin current"><circle cx="213" cy="137" r="23"/><text x="213" y="143">3</text></g><g class="pin locked"><circle cx="279" cy="60" r="18"/><text x="279" y="66">?</text></g>
+            </svg>
+            <button class="locate" aria-label="Meinen Standort anzeigen">⌖</button>
+          </div>
+          <div class="mission-card"><div class="mission-icon">♜</div><div><small>NÄCHSTE STATION · 180 M</small><strong>Der stumme Wächter</strong><p>Finde das älteste Gesicht am Marktplatz.</p></div><button data-scan>→</button></div>
+          <nav class="app-tabs"><button class="active">⌖<small>Karte</small></button><button data-scan>▣<small>Scannen</small></button><button>◇<small>Sammlung</small></button></nav>
+        </div>
+        <div class="float-card nfc"><span>◉</span><div><small>EINFACH ANTIPPEN</small><strong>NFC-Tag entdeckt</strong></div></div>
+        <div class="float-card clue"><span>✦</span><div><small>NEUER HINWEIS</small><strong>Hör genau hin …</strong></div></div>
+        <div class="scribble">Hier beginnt<br />dein Abenteuer! <b>↗</b></div>
+      </section>
+
+      <section class="how" id="so-gehts">
+        <div><span class="section-kicker">SO EINFACH GEHT’S</span><h2>Rausgehen.<br />Hinsehen. <em>Staunen.</em></h2></div>
+        <div class="steps">
+          <article><span>01</span><div class="step-icon">⌖</div><h3>Tour wählen</h3><p>Finde ein Abenteuer in deiner Nähe – spontan oder geplant.</p></article>
+          <article><span>02</span><div class="step-icon">⌁</div><h3>Spuren folgen</h3><p>Die Karte führt dich. QR-Codes, NFC und Rätsel öffnen neue Wege.</p></article>
+          <article><span>03</span><div class="step-icon">✦</div><h3>Geschichten sammeln</h3><p>Entdecke Audio-Hinweise, AR-Geister und gemeinsame Team-Challenges.</p></article>
+        </div>
+      </section>
+
+      <section class="tours" id="touren"><span class="section-kicker">BELIEBTE ABENTEUER</span><h2>Wohin zieht es dich?</h2><div class="tour-grid">
+        <article><div class="tour-art forest">🌲<span>90 MIN</span></div><div><small>MYSTERY · 3,2 KM</small><h3>Das Flüstern im Stadtwald</h3><p>Eine verschwundene Botanikerin. Sieben rätselhafte Zeichen.</p><button data-start>Tour ansehen →</button></div></article>
+        <article><div class="tour-art city">♜<span>60 MIN</span></div><div><small>GESCHICHTE · 2,1 KM</small><h3>Altstadt Geheimnisse</h3><p>Verborgene Botschaften zwischen Gassen, Türmen und Fassaden.</p><button data-start>Tour ansehen →</button></div></article>
+        <article><div class="tour-art night">☾<span>120 MIN</span></div><div><small>NACHTTOUR · 4,0 KM</small><h3>Lichter der Vergangenheit</h3><p>Wenn es dunkel wird, erzählen die Schatten ihre Geschichten.</p><button data-start>Tour ansehen →</button></div></article>
+      </div></section>
+
+      <section class="feature-strip" id="features"><p>Mehr als nur Rätsel</p><div><span>◉ NFC-Momente</span><span>▣ QR-Entdeckungen</span><span>♬ Audio-Spuren</span><span>◎ AR-Geister</span><span>⚑ Team-Duelle</span></div></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">S</span><span>Spurensinn</span></a><p>Die Welt wartet nicht im Feed.<br />Sie wartet draußen.</p><button class="button light" data-start>Jetzt losziehen →</button></footer>
+
+    <dialog id="login-dialog">
+      <button class="close" data-close aria-label="Schließen">×</button><span class="brand-mark">S</span><h2>Willkommen zurück</h2><p>Bereit für die nächste Spur?</p>
+      <div class="role-tabs" role="tablist"><button class="active" data-role="user">Entdecker:in</button><button data-role="admin">Admin</button></div>
+      <form id="login-form"><label>E-Mail-Adresse<input type="email" required placeholder="du@beispiel.de" /></label><label>Passwort<input type="password" required minlength="6" placeholder="••••••••" /></label><button class="button primary" type="submit">Anmelden <span>→</span></button></form>
+      <small class="form-note">Noch nicht dabei? <a href="#">Kostenlos registrieren</a></small>
+    </dialog>
+
+    <div class="scanner" id="scanner" hidden><button data-close-scan>×</button><div class="scan-frame"><i></i></div><h2>Code scannen</h2><p>Richte die Kamera auf einen QR-Code oder halte dein Smartphone an einen NFC-Tag.</p><span class="scan-status">◉ Bereit zum Entdecken</span></div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
